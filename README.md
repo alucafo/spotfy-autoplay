@@ -1,4 +1,4 @@
-# 🎵 Spotify Auto-Play Fix – Userscript
+# 🎵 Spotfy Auto-Play Fix
 
 A simple userscript that fixes the annoying issue on Spotfy where playback stops after each track. This script automatically clicks the play button when the next song doesn't start on its own.
 
