@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Spotfy AutoPlay (Seekbar check)
 // @namespace    https://github.com/alucafo
-// @version      1.0
+// @version      1.1
 // @description  Autoplay on spotfy.one
 // @author       alucafo
 // @license      MIT
@@ -12,7 +12,7 @@
 (function() {
     'use strict';
 
-    console.log("🎵 AutoPlay Spotfy.one attivo");
+    console.log("AutoPlay ON");
 
     function checkAndClickPlay() {
         const elapsed = document.querySelector('.elapsed-time')?.textContent?.trim();
@@ -21,7 +21,7 @@
 
         // If the track is paused and stuck at 0:00,automatically play it
         if (elapsed === '0:00' && isBtnVisible) {
-            console.log("🕒 Seekbar a 0:00. Provo a cliccare Play...");
+            console.log("Play");
             playBtn.click();
         }
     }
